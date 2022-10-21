@@ -5,13 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <style>
+        body{
+            background-image: radial-gradient(white, lightblue);
+            background-repeat: no-repeat;
+            height: 99vh;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            
+            
+        }
+        h1{
+            text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.678);
+            text-align: center;
+            font-weight: bold;
+            position: absolute;
+            top: 27%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-image: linear-gradient(to right,  antiquewhite, rgba(173, 216, 230, 0.81), rgba(255, 255, 255, 0));
+            
+        }
+
+        #container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: black solid 1px;
+            padding: 50px 60px;
+            background-color: antiquewhite;
+            box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.658);
+            
+
+        }
+        #isobrenome{
+            margin-left: -41px;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            border-radius: 8px;
+            height: 20px;
+        }
+        #sobre{
+            margin-left: -82px;
+            padding: 40px;
+            color: black;
+            font-weight: bolder;
+        }
+        #nome{
+            background-color: rgb(255, 255, 255);
+            color: black;
+            border-radius: 8px;
+            height: 20px;
+        }
+        #nombre{
+            color: rgb(0, 0, 0);
+            font-weight: bolder;
+        }
+        #enviar{
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            padding: 3px;
+            border-radius: 12px;
+            width: 100px;
+            background-image: linear-gradient(to bottom, rgb(167, 233, 230), rgb(193, 193, 193));
+            color: black;
+            font-weight: bolder;
+            height: 30px;
+        }
+        #enviar:hover{
+            padding: 6px;
+            box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.432);
+            cursor: pointer;
+        }
+        
+        
+    </style>
 </head>
 <body>
         <h1>Formulario</h1>
-        <form action="cadastro.php" method="POST" autocomplete="off">
-            <p><label for="nome">Nome:</label> <input type="text" name="nome" id="nome"></p>
-            <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
-            <p><input type="submit" value="Enviar"></p>
-        </form>
+        
+        <div id="container">
+            <form action="cadastro.php" method="POST" autocomplete="off">
+                <p><label for="nome" id="nombre">Nome:</label> <input type="text" name="nome" id="nome"></p>
+                <p><label for="isobrenome" id="sobre">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+                <p><input type="submit" value="Enviar" id="enviar"></p>
+            </form>
+        </div>
 </body>
 </html>
