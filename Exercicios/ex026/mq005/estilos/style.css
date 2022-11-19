@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../../imagens/back-pc.jpg);
+    background-color: antiquewhite;
+    
+    
+    
+}
+
+header{
+    background: url(../../imagens/back-pc.jpg);
+    background-repeat: no-repeat;
+    
+}
+
+header > h1{
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+#icon{
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(204, 45, 193, 0.329);
+    backdrop-filter: blur(15px);
+}
+
+#icon:hover{
+    color: rgb(242, 60, 203);
+    cursor: pointer;
+}
+
+menu#itens{
+    display: none;
+}
+
+menu > ul{
+    list-style-type: none;
+}
+
+menu > ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background: rgba(211, 211, 211, 0);
+    background-repeat: no-repeat;
+    
+    color: white;
+    border-top: 2px solid rgba(0, 0, 0, 0.568);
+
+}
+
+menu > ul > li> a:hover{
+    background: rgba(211, 211, 211, 0.247);
+    backdrop-filter: blur(15px);
+    
+}
+
+main{
+    width: 90vw;
+    background-color: rgba(255, 255, 255, 0.186);
+    backdrop-filter: blur(18px);
+    box-shadow: 1px 1px 5px 1px black;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+article > h2{
+    padding-bottom: 20px;
+}
+
+article > p {
+    text-align: justify;
+    margin-bottom: 10px;
+    text-indent: 20px;
+}
+
