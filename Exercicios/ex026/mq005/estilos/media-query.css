@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+
+@media screen and (min-width: 768px) {
+    #icon{
+        display: none;
+    }
+    menu#itens {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+        background-color: rgba(211, 211, 211, 0.281);
+        backdrop-filter: blur(15px);
+    }
+    main{
+        width: 768px;
+}
